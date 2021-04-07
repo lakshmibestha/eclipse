@@ -3,7 +3,6 @@ package com.app.ws;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 //import com.app.ws.security.AppProperties;
 
@@ -14,11 +13,11 @@ public class MobileAppWssApplication {
 		SpringApplication.run(MobileAppWssApplication.class, args);
 	}
 
-	@Bean
-	public BCryptPasswordEncoder bCryptPasswordEncoder()
-	{
-		return new BCryptPasswordEncoder();
-	}
+//	@Bean
+//	public BCryptPasswordEncoder bCryptPasswordEncoder()
+//	{
+//		return new BCryptPasswordEncoder();
+//	}
 	@Bean
 	public SpringApplicationContext springApplicationContext()
 	{

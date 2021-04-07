@@ -15,7 +15,21 @@ public class UserDto implements Serializable {
 	private String password;
 	private String emailVerificationToken;
 	private boolean emailVerificationStatus= false;
+	private String UserId;
 	
+	
+	/**
+	 * @return the userId
+	 */
+	public String getUserId() {
+		return UserId;
+	}
+	/**
+	 * @param userId the userId to set
+	 */
+	public void setUserId(String userId) {
+		UserId = userId;
+	}
 	public long getId() {
 		return Id;
 	}
